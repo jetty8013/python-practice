@@ -16,8 +16,12 @@ try:
     # 커서 생성
     cursor = conn.cursor()
     
+    # 데이터베이스 생성 쿼리 실행
+    create_db_query = "CREATE DATABASE IF NOT EXISTS developer"
+    cursor.execute(create_db_query)
+
     # MySQL 서버에 접속이 성공하면 이 메시지를 출력
-    print("MySQL 서버에 접속 성공")
+    print("MySQL 서버에 접속 성공 및 데이터베이스 'developer' 생성 완료")
 
 except pymysql.MySQLError as e:
     # 접속 오류가 발생하면 이 메시지를 출력
