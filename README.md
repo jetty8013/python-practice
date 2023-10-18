@@ -1,6 +1,6 @@
 # python-practice
 
-이 저장소는 제가 Python 연습을 진행하는 곳입니다.
+이 저장소는 제가 Python과 MySQL 연습을 진행하는 곳입니다.
 
 
 
